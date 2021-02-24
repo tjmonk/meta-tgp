@@ -1,6 +1,6 @@
-require recipes-core/images/core-image-minimal.bb
+require recipes-tgp-services/images/tgp-services-image.bb
 
 DESCRIPTION = "The Gateway Project Core Components" 
 
-IMAGE_INSTALL += "libvarserver varserver getvar setvar tcc"
+IMAGE_INSTALL += "libjson libvarserver varserver getvar setvar tcc libtemplate libvarcreate libvmcore libluavars libvmasm libvarvm varcreate vartest vasm vexe vm print-template sysconf"
 

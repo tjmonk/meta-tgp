@@ -15,8 +15,10 @@ LIC_FILES_CHKSUM = ""
 SRC_URI = "git://git@bitbucket.org/monktj/libvarserver.git;protocol=ssh"
 
 # Modify these as desired
+BB_SRCREV_POLICY = "clear"
+
 PV = "1.0+git${SRCPV}"
-SRCREV = "a5cf12ae1e9ea0caa4735c06d7f54c60db37f17a"
+SRCREV = "${AUTOREV}"
 
 S = "${WORKDIR}/git"
 

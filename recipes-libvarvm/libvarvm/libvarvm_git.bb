@@ -16,7 +16,7 @@ SRC_URI = "git://git@bitbucket.org/monktj/libvarvm.git;protocol=ssh"
 
 # Modify these as desired
 PV = "1.0+git${SRCPV}"
-SRCREV = "78603c3a27922281cc59c825ec6f9eff319ffae9"
+SRCREV = "0737ae3fb11353b6d0e22468539838c76cd1d777"
 
 S = "${WORKDIR}/git"
 

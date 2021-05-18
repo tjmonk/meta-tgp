@@ -1,0 +1,11 @@
+{
+    "commands" : [
+        { "var" : "/sys/network/ip",
+          "exec" : "ifconfig eth0 | grep \"inet addr\" | awk '{split($2,a,\":\"); printf \"%s\", a[2]}'" },
+        { "var" : "/sys/info/uptime",
+          "exec" : "uptime | tr '\\n' '\\0'" },
+        { "var" : "/sys/network/mac",
+          "exec" : "ifconfig eth0 | grep HWaddr | awk '{printf \"%s\", $5}'" }
+    ]
+}
+

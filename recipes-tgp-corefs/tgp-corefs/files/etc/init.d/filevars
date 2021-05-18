@@ -1,0 +1,46 @@
+#!/bin/sh
+# Start/stop the execvars server.
+#
+### BEGIN INIT INFO
+# Provides:          vars
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Required-Start:    $local_fs $syslog varserver
+# Required-Stop:     $local_fs $syslog varserver
+# Short-Description: System Variable Creation
+# Description:       Creates system variables for the application
+### END INIT INFO
+
+PATH=/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin
+DESC="System Variable File Variables"
+NAME=filevars
+
+CONF=/etc/"$NAME"/"$NAME".json
+
+if [ -f /usr/local/bin/"$NAME" ]; then
+    FILEVARS=/usr/local/bin/"$NAME"
+else
+    FILEVARS=/usr/bin/"$NAME"
+fi
+
+if [ -f /lib/lsb/init-functions ]; then
+    . /lib/lsb/init-functions
+fi
+
+if [ -f /etc/init.d/functions ]; then
+    . /etc/init.d/functions
+fi
+
+case "$1" in
+start)  echo "Starting $NAME"
+        $FILEVARS -f $CONF &
+        ;;
+restart) echo "Restarting $DESC" "$NAME"
+        $0 start
+        ;;
+*)	echo "Usage: /etc/init.d/"$NAME" {start|restart}"
+        exit 2
+        ;;
+esac
+exit 0
+

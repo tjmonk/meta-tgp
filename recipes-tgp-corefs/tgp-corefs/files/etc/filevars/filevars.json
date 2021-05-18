@@ -1,0 +1,10 @@
+{
+    "config" : [
+        { "var" : "/sys/etc/crontab",
+          "file" : "/etc/crontab" },
+        { "var" : "/sys/etc/passwd",
+          "file" : "/etc/passwd" },
+        { "var" : "/sys/info/detail",
+          "file" : "/usr/share/templates/sysinfo.txt" }
+    ]
+}

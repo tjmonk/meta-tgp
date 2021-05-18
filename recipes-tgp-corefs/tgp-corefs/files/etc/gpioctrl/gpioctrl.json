@@ -1,0 +1,31 @@
+{ "gpiodef": [
+	{ "chip" : "gpiochip1",
+	  "lines" : [
+		{ "line" : "21",
+		  "var" : "/HW/GPIO/LED0",
+		  "active_state" : "high",
+		  "direction" : "output" },
+		{ "line" : "22",
+		  "var" : "/HW/GPIO/LED1",
+		  "active_state" : "high",
+		  "direction" : "output" },
+		{ "line" : "23",
+		  "var" : "/HW/GPIO/LED2",
+		  "active_state" : "high",
+		  "direction" : "output" },
+		{ "line" : "24",
+		  "var" : "/HW/GPIO/LED3",
+		  "active_state" : "high",
+		  "direction" : "output" }
+	  ]
+    },
+    { "chip" : "gpiochip2",
+      "lines" : [
+        { "line" : "8",
+          "var" : "/HW/GPIO/SW2",
+          "active_state" : "high",
+          "direction" : "input" }
+      ]
+    }
+  ]
+}

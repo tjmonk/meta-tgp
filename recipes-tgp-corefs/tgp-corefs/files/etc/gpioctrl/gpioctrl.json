@@ -24,7 +24,8 @@
         { "line" : "8",
           "var" : "/HW/GPIO/SW2",
           "active_state" : "high",
-          "direction" : "input" }
+          "direction" : "input",
+		  "event" : "BOTH_EDGES" }
       ]
     }
   ]

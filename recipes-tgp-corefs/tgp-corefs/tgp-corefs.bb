@@ -15,7 +15,7 @@ SRC_URI = "file://etc/execvars/execvars.json \
            file://etc/init.d/execvars \
            file://etc/init.d/filevars \
            file://etc/init.d/gpioctrl \
-	   file://etc/default/volatiles/01-tgp-corefs \
+           file://etc/default/volatiles/01-tgp-corefs \
            file://templates/sysinfo.txt \
            file://etc/lighttpd/lighttpd.conf \
 "
@@ -35,7 +35,7 @@ do_install () {
         install -d ${D}${sysconfdir}/gpioctrl
         install -d ${D}${sysconfdir}/init.d
         install -d ${D}${sysconfdir}/lighttpd
-	install -d ${D}${sysconfdir}/default/volatiles
+        install -d ${D}${sysconfdir}/default/volatiles
         install -d ${D}${datadir}/templates
 
         install -m 0644    ${WORKDIR}/etc/gpioctrl/gpioctrl.json         ${D}${sysconfdir}/gpioctrl
@@ -48,7 +48,7 @@ do_install () {
         install -m 0755    ${WORKDIR}/etc/init.d/filevars                ${D}${sysconfdir}/init.d/filevars
         install -m 0755    ${WORKDIR}/etc/init.d/gpioctrl                ${D}${sysconfdir}/init.d/gpioctrl
         install -m 0644    ${WORKDIR}/etc/lighttpd/lighttpd.conf         ${D}${sysconfdir}/lighttpd/lighttpd.conf
-	install -m 0644    ${WORKDIR}/etc/default/volatiles/01-tgp-corefs ${D}${sysconfdir}/default/volatiles/01-tgp-corefs
+        install -m 0644    ${WORKDIR}/etc/default/volatiles/01-tgp-corefs ${D}${sysconfdir}/default/volatiles/01-tgp-corefs
 
         update-rc.d -r ${D} createvars start 40 2 3 4 5 .
         update-rc.d -r ${D} execvars start 50 2 3 4 5 .

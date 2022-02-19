@@ -22,7 +22,7 @@ S = "${WORKDIR}/git"
 
 # NOTE: the following library dependencies are unknown, ignoring: REQUIRED
 #       (this is based on recipes that have previously been built and packaged)
-DEPENDS = "libvarserver libgpiod libjson"
+DEPENDS = "libvarserver libgpiod (>=1.6.3) libjson"
 
 inherit cmake
 

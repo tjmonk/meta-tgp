@@ -24,7 +24,7 @@ SRC_URI = "file://etc/execvars/execvars.json \
            file://etc/config/bbg.cfg \
            file://etc/config/hardware.cfg \
            file://etc/config/init.cfg \
-           file://etc/config/tgp.cfg
+           file://etc/config/tgp.cfg \
 "
 
 FILES_${PN} = "/"

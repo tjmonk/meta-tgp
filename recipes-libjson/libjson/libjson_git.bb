@@ -12,15 +12,17 @@
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
 
-SRC_URI = "git://git@bitbucket.org/monktj/libjson.git;protocol=ssh"
+SRC_URI = "git://git@bitbucket.org/monktj/libjson.git;protocol=ssh;branch=master"
 
 # Modify these as desired
 PV = "1.0+git${SRCPV}"
-SRCREV = "dd11130ee7f718b94ee95019c44b21de966e9441"
+SRCREV = "20dbd10ed30217dfb5239095c2ee40a1a5020598"
 
 S = "${WORKDIR}/git"
 
-DEPENDS = "flex-native bison-native libvarserver"
+# NOTE: the following library dependencies are unknown, ignoring: REQUIRED
+#       (this is based on recipes that have previously been built and packaged)
+DEPENDS = "bison-native libvarserver flex-native"
 
 inherit cmake
 

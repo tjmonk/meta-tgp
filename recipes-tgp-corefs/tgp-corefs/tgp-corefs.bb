@@ -16,6 +16,7 @@ SRC_URI = "file://etc/execvars/execvars.json \
            file://etc/init.d/filevars \
            file://etc/init.d/gpioctrl \
            file://etc/init.d/load \
+           file://etc/init.d/iothub \
            file://etc/default/volatiles/01-tgp-corefs \
            file://templates/sysinfo.txt \
            file://etc/lighttpd/lighttpd.conf \
@@ -39,6 +40,7 @@ do_install () {
         install -d ${D}${sysconfdir}/execvars
         install -d ${D}${sysconfdir}/filevars
         install -d ${D}${sysconfdir}/gpioctrl
+        install -d ${D}${sysconfdir}/config
         install -d ${D}${sysconfdir}/load
         install -d ${D}${sysconfdir}/init.d
         install -d ${D}${sysconfdir}/lighttpd
@@ -60,6 +62,7 @@ do_install () {
         install -m 0755    ${WORKDIR}/etc/init.d/filevars                ${D}${sysconfdir}/init.d/filevars
         install -m 0755    ${WORKDIR}/etc/init.d/gpioctrl                ${D}${sysconfdir}/init.d/gpioctrl
         install -m 0755    ${WORKDIR}/etc/init.d/load                    ${D}${sysconfdir}/init.d/load
+        install -m 0755    ${WORKDIR}/etc/init.d/iothub                  ${D}${sysconfdir}/init.d/iothub
         install -m 0644    ${WORKDIR}/etc/lighttpd/lighttpd.conf         ${D}${sysconfdir}/lighttpd/lighttpd.conf
         install -m 0644    ${WORKDIR}/etc/default/volatiles/01-tgp-corefs ${D}${sysconfdir}/default/volatiles/01-tgp-corefs
 
@@ -67,7 +70,8 @@ do_install () {
         update-rc.d -r ${D} execvars start 50 2 3 4 5 .
         update-rc.d -r ${D} filevars start 50 2 3 4 5 .
         update-rc.d -r ${D} gpioctrl start 51 2 3 4 5 .
-        update-rc.d -r ${D} load start 60 2 3 4 5 .
+        update-rc.d -r ${D} load start 52 2 3 4 5 .
+        update-rc.d -r ${D} iothub start 53 2 3 4 5 .
 
 }
 

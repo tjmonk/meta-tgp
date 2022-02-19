@@ -12,16 +12,15 @@
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
 
-SRC_URI = "git://git@bitbucket.org/monktj/libtemplate.git;protocol=ssh"
-
-DEPENDS = "libvarserver"
-RDEPENDS_${PN} = "libvarserver"
+SRC_URI = "git://git@bitbucket.org/monktj/libtemplate.git;protocol=ssh;branch=master"
 
 # Modify these as desired
 PV = "1.0+git${SRCPV}"
-SRCREV = "8e390972392b833764da84d1ff5442c86b069c09"
+SRCREV = "38fad197eb653b586204cc18942b308e039dc0ec"
 
 S = "${WORKDIR}/git"
+
+DEPENDS = "libvarserver"
 
 inherit cmake
 

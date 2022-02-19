@@ -12,18 +12,17 @@
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
 
-SRC_URI = "git://git@bitbucket.org/monktj/print_template.git;protocol=ssh"
+SRC_URI = "git://git@bitbucket.org/monktj/iotexec.git;protocol=ssh;branch=main"
 
 # Modify these as desired
 PV = "1.0+git${SRCPV}"
-SRCREV = "4ec68c1eea4f2507c83e7bf3604af9e32d89e7f1"
+SRCREV = "28f62392fa6ec4de043f11d5a08d02c5f8daf437"
 
 S = "${WORKDIR}/git"
 
 # NOTE: the following library dependencies are unknown, ignoring: REQUIRED
 #       (this is based on recipes that have previously been built and packaged)
-DEPENDS = "libvarserver libtemplate"
-RDEPENDS_${PN} = "libvarserver libtemplate"
+DEPENDS = "libiotclient"
 
 inherit cmake
 

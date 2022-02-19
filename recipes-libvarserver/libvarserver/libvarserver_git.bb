@@ -12,13 +12,11 @@
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
 
-SRC_URI = "git://git@bitbucket.org/monktj/libvarserver.git;protocol=ssh"
+SRC_URI = "git://git@bitbucket.org/monktj/libvarserver.git;protocol=ssh;branch=master"
 
 # Modify these as desired
-BB_SRCREV_POLICY = "clear"
-
 PV = "1.0+git${SRCPV}"
-SRCREV = "${AUTOREV}"
+SRCREV = "1ec3cc4c53f7454c9ff944e4c926a4503b43bb9f"
 
 S = "${WORKDIR}/git"
 

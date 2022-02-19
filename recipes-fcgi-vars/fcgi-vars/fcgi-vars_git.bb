@@ -12,18 +12,21 @@
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
 
-SRC_URI = "git://git@bitbucket.org/monktj/print_template.git;protocol=ssh"
+SRC_URI = "git://git@bitbucket.org/monktj/fcgi_vars.git;protocol=ssh \
+           file://0001-update-file-permissions-during-installation.patch \
+           file://0002-add-fcgi-files.patch \
+           file://0003-port-to-poky.patch \
+           "
 
 # Modify these as desired
 PV = "1.0+git${SRCPV}"
-SRCREV = "4ec68c1eea4f2507c83e7bf3604af9e32d89e7f1"
+SRCREV = "${AUTOREV}"
 
 S = "${WORKDIR}/git"
 
 # NOTE: the following library dependencies are unknown, ignoring: REQUIRED
 #       (this is based on recipes that have previously been built and packaged)
-DEPENDS = "libvarserver libtemplate"
-RDEPENDS_${PN} = "libvarserver libtemplate"
+DEPENDS = "fcgi libvarserver"
 
 inherit cmake
 

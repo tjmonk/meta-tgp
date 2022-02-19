@@ -15,9 +15,15 @@ SRC_URI = "file://etc/execvars/execvars.json \
            file://etc/init.d/execvars \
            file://etc/init.d/filevars \
            file://etc/init.d/gpioctrl \
+           file://etc/init.d/load \
            file://etc/default/volatiles/01-tgp-corefs \
            file://templates/sysinfo.txt \
            file://etc/lighttpd/lighttpd.conf \
+           file://etc/config/app.cfg \
+           file://etc/config/bbg.cfg \
+           file://etc/config/hardware.cfg \
+           file://etc/config/init.cfg \
+           file://etc/config/tgp.cfg
 "
 
 FILES_${PN} = "/"
@@ -33,6 +39,7 @@ do_install () {
         install -d ${D}${sysconfdir}/execvars
         install -d ${D}${sysconfdir}/filevars
         install -d ${D}${sysconfdir}/gpioctrl
+        install -d ${D}${sysconfdir}/load
         install -d ${D}${sysconfdir}/init.d
         install -d ${D}${sysconfdir}/lighttpd
         install -d ${D}${sysconfdir}/default/volatiles
@@ -42,11 +49,17 @@ do_install () {
         install -m 0644    ${WORKDIR}/etc/execvars/execvars.json         ${D}${sysconfdir}/execvars
         install -m 0644    ${WORKDIR}/etc/filevars/filevars.json         ${D}${sysconfdir}/filevars
         install -m 0644    ${WORKDIR}/etc/vars/vars.json                 ${D}${sysconfdir}/vars
+        install -m 0644    ${WORKDIR}/etc/config/app.cfg                 ${D}${sysconfdir}/config
+        install -m 0644    ${WORKDIR}/etc/config/bbg.cfg                 ${D}${sysconfdir}/config
+        install -m 0644    ${WORKDIR}/etc/config/hardware.cfg            ${D}${sysconfdir}/config
+        install -m 0644    ${WORKDIR}/etc/config/init.cfg                ${D}${sysconfdir}/config
+        install -m 0644    ${WORKDIR}/etc/config/tgp.cfg                 ${D}${sysconfdir}/config
         install -m 0644    ${WORKDIR}/templates/sysinfo.txt              ${D}${datadir}/templates
         install -m 0755    ${WORKDIR}/etc/init.d/createvars              ${D}${sysconfdir}/init.d/createvars
         install -m 0755    ${WORKDIR}/etc/init.d/execvars                ${D}${sysconfdir}/init.d/execvars
         install -m 0755    ${WORKDIR}/etc/init.d/filevars                ${D}${sysconfdir}/init.d/filevars
         install -m 0755    ${WORKDIR}/etc/init.d/gpioctrl                ${D}${sysconfdir}/init.d/gpioctrl
+        install -m 0755    ${WORKDIR}/etc/init.d/load                    ${D}${sysconfdir}/init.d/load
         install -m 0644    ${WORKDIR}/etc/lighttpd/lighttpd.conf         ${D}${sysconfdir}/lighttpd/lighttpd.conf
         install -m 0644    ${WORKDIR}/etc/default/volatiles/01-tgp-corefs ${D}${sysconfdir}/default/volatiles/01-tgp-corefs
 
@@ -54,6 +67,7 @@ do_install () {
         update-rc.d -r ${D} execvars start 50 2 3 4 5 .
         update-rc.d -r ${D} filevars start 50 2 3 4 5 .
         update-rc.d -r ${D} gpioctrl start 51 2 3 4 5 .
+        update-rc.d -r ${D} load start 60 2 3 4 5 .
 
 }
 

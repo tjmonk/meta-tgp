@@ -1,12 +1,37 @@
--------------------------------------------------------------
 
-This is a test
-The value of /sys/test/a is ${/sys/test/a} and the value of
-/sys/test/b is ${/sys/test/b}.
-We can even print floats: /sys/test/f is ${/sys/test/f} and
-we can print strings too: /sys/test/c is:
-${/sys/test/c}
-The uptime is ${/SYS/INFO/UPTIME}
-The MAC address is ${/SYS/NETWORK/MAC}
+------------------------------------------------------------------------------
+                   __
+                 .'  '.
+                :      :
+                | _  _ |
+             .-.|(o)(o)|.-.        _._          _._
+            ( ( | .--. | ) )     .',_ '.      .' _,'.
+             '-/ (    ) \-'     / /' `\ \ __ / /' `\ \
+              /   '--'   \     / /     \.'  './     \ \
+              \ `"===="` /     `-`     : _  _ :      `-`
+               `\      /'              |(o)(o)|
+                 `\  /'                |      |
+                 /`-.-`\_             /        \
+           _..:;\._/V\_./:;.._       /   .--.   \
+         .'/;:;:;\ /^\ /:;:;:\'.     |  (    )  |
+        / /;:;:;:;\| |/:;:;:;:\ \    _\  '--'  /__
+   jgs / /;:;:;:;:;\_/:;:;:;:;:\ \ .'  '-.__.-'   `-.
+------------------------------------------------------------------------------
 
--------------------------------------------------------------
+${/sys/app/name} ${/sys/app/version}
+${/sys/app/modified}
+${/sys/app/copyright}
+
+Application GUID: ${/sys/app/guid}
+
+Hardware Model: ${/sys/hw/model}
+Manufacturer: ${/sys/hw/manufacturer}
+CPU: ${/sys/hw/cpu}
+HW Rev: ${/sys/hw/rev}
+
+Device Serial Number: ${/sys/device/serialnum}
+Device GUID: ${/sys/device/guid}
+Device Date of Manufacture: ${/sys/device/dom}
+
+------------------------------------------------------------------------------
+

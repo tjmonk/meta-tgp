@@ -1,0 +1,46 @@
+#!/bin/sh
+# Load system configuration settings
+#
+### BEGIN INIT INFO
+# Provides:          load
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Required-Start:    $local_fs $syslog varserver createvars
+# Required-Stop:     $local_fs $syslog varserver createvars
+# Short-Description: System Configuration loading
+# Description:       Loads the system configuration (sysvar initialization)
+### END INIT INFO
+
+PATH=/bin:/usr/bin:/sbin:/usr/sbin:/usr/local/bin
+DESC="System Configuration"
+NAME=load
+CONFIGDIR=/etc/config
+
+if [ -f /usr/local/bin/"$NAME" ]; then
+    LOADCONFIG=/usr/local/bin/load
+else
+    LOADCONFIG=/usr/bin/load
+fi
+
+if [ -f /lib/lsb/init-functions ]; then
+    . /lib/lsb/init-functions
+fi
+
+if [ -f /etc/init.d/functions ]; then
+    . /etc/init.d/functions
+fi
+
+case "$1" in
+start)  echo "Initializing system configuration"
+        cd $CONFIGDIR
+        $LOADCONFIG -v -f init.cfg
+        ;;
+restart) echo "Restarting $DESC" "$NAME"
+        $0 start
+        ;;
+*)	echo "Usage: /etc/init.d/"$NAME" {start|restart}"
+        exit 2
+        ;;
+esac
+exit 0
+

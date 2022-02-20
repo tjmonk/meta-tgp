@@ -31,7 +31,7 @@ fi
 
 case "$1" in
 start)  echo "Initializing IOTHub"
-        $IOTHUB
+        $IOTHUB &
         ;;
 restart) echo "Restarting $DESC" "$NAME"
         $0 start

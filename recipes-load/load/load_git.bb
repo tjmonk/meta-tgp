@@ -12,17 +12,17 @@
 LICENSE = "CLOSED"
 LIC_FILES_CHKSUM = ""
 
-SRC_URI = "git://git@bitbucket.org/monktj/fcgi_vars.git;protocol=ssh;branch=master"
+SRC_URI = "git://git@bitbucket.org/monktj/load.git;protocol=ssh;branch=master"
 
 # Modify these as desired
 PV = "1.0+git${SRCPV}"
-SRCREV = "0b1cc3acc5d9a8eef6223b6bce18a32651ac8465"
+SRCREV = "1e4957dd9a08f411eb80e97f2ce43ae0d6c8127a"
 
 S = "${WORKDIR}/git"
 
 # NOTE: the following library dependencies are unknown, ignoring: REQUIRED
 #       (this is based on recipes that have previously been built and packaged)
-DEPENDS = "fcgi libvarserver"
+DEPENDS = "libtemplate libvarserver"
 
 inherit cmake
 

@@ -31,6 +31,7 @@ IMAGE_INSTALL += " libiotclient"
 IMAGE_INSTALL += " iothub"
 IMAGE_INSTALL += " iotsend"
 IMAGE_INSTALL += " iotexec"
+IMAGE_INSTALL += " load"
 
 CORE_IMAGE_EXTRA_INSTALL += "packagegroup-cloud-azure"
 

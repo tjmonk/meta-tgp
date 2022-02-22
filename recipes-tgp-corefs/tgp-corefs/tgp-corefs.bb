@@ -25,6 +25,7 @@ SRC_URI = "file://etc/execvars/execvars.json \
            file://etc/config/hardware.cfg \
            file://etc/config/init.cfg \
            file://etc/config/tgp.cfg \
+           file://bin/current_sample.sh \
 "
 
 FILES_${PN} = "/"
@@ -65,6 +66,7 @@ do_install () {
         install -m 0755    ${WORKDIR}/etc/init.d/iothub                  ${D}${sysconfdir}/init.d/iothub
         install -m 0644    ${WORKDIR}/etc/lighttpd/lighttpd.conf         ${D}${sysconfdir}/lighttpd/lighttpd.conf
         install -m 0644    ${WORKDIR}/etc/default/volatiles/01-tgp-corefs ${D}${sysconfdir}/default/volatiles/01-tgp-corefs
+        install -m 0755    ${WORKDIR}/bin/current_sample.sh              ${D}${bindir}/current_sample.sh
 
         update-rc.d -r ${D} createvars start 40 2 3 4 5 .
         update-rc.d -r ${D} execvars start 50 2 3 4 5 .

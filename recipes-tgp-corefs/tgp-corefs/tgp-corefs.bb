@@ -47,6 +47,7 @@ do_install () {
         install -d ${D}${sysconfdir}/lighttpd
         install -d ${D}${sysconfdir}/default/volatiles
         install -d ${D}${datadir}/templates
+        install -d ${D}${bindir}
 
         install -m 0644    ${WORKDIR}/etc/gpioctrl/gpioctrl.json         ${D}${sysconfdir}/gpioctrl
         install -m 0644    ${WORKDIR}/etc/execvars/execvars.json         ${D}${sysconfdir}/execvars
@@ -77,3 +78,8 @@ do_install () {
 
 }
 
+pkg_postinst_tgp-corefs() {
+    echo "adding crontab"
+    test -d $D/var/spool/cron || mkdir -p $D/var/spool/cron
+    echo "* * * * *   ${bindir}/current_sample.sh" >> $D/var/spool/cron/root
+}

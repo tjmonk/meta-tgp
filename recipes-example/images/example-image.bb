@@ -1,0 +1,36 @@
+require ../../../../meta/recipes-extended/images/core-image-full-cmdline.bb
+
+DESCRIPTION = "A small image just capable of allowing a device to boot and \
+is suitable for development work."
+
+IMAGE_FEATURES += "dev-pkgs"
+
+IMAGE_INSTALL += "varserver"
+IMAGE_INSTALL += "varcreate"
+IMAGE_INSTALL += "libtjson"
+IMAGE_INSTALL += "loadconfig"
+IMAGE_INSTALL += "tcc"
+IMAGE_INSTALL += "libvaraction"
+IMAGE_INSTALL += "procmon"
+IMAGE_INSTALL += "statemachine"
+IMAGE_INSTALL += "actions"
+IMAGE_INSTALL += "paho-c"
+IMAGE_INSTALL += "mqttvars"
+IMAGE_INSTALL += "neurio"
+IMAGE_INSTALL += "execvars"
+IMAGE_INSTALL += "filevars"
+IMAGE_INSTALL += "lua"
+IMAGE_INSTALL += "libluavars"
+IMAGE_INSTALL += "fcgi"
+IMAGE_INSTALL += "fcgi-vars"
+IMAGE_INSTALL += "fcgi-proc"
+IMAGE_INSTALL += "fcgi-test"
+IMAGE_INSTALL += "ads7830"
+IMAGE_INSTALL += "lcd1602"
+IMAGE_INSTALL += "libgpiod"
+IMAGE_INSTALL += "gpioctrl"
+IMAGE_INSTALL += "iothub"
+IMAGE_INSTALL += "libiotclient"
+IMAGE_INSTALL += "iotsend"
+IMAGE_INSTALL += "iotexec"
+

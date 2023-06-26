@@ -1,1 +1,1 @@
-# meta-tgp
+# meta-tgp-core

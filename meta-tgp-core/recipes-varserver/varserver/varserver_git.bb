@@ -17,6 +17,7 @@ SRCREV = "e7fb5b4b0429715eca9dee843685eda820df2249"
 S = "${WORKDIR}/git"
 
 inherit cmake
+inherit systemd
 
 # Specify any options you want to pass to cmake using EXTRA_OECMAKE:
 EXTRA_OECMAKE = ""

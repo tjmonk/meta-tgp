@@ -8,11 +8,10 @@ LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=5dac46abad17db93b2a17020eeeabdca"
 
 SRC_URI = "git://github.com/tjmonk/varserver.git;protocol=https;branch=main"
-SRC_URI += "file://varserver.service"
 
 # Modify these as desired
 PV = "1.0+git${SRCPV}"
-SRCREV = "e7fb5b4b0429715eca9dee843685eda820df2249"
+SRCREV = "2d1a59a85bdef7797bbd947f0ddf7a8cb7b52349"
 
 S = "${WORKDIR}/git"
 

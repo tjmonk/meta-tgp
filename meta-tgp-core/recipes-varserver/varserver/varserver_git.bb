@@ -27,4 +27,6 @@ do_install:append() {
     install -m 0644 ${WORKDIR}/varserver.service ${D}${sysconfdir}/systemd/system/
 }
 
+FILES:${PN} += "/etc/systemd/system/*"
+
 SYSTEMD_SERVICE:${PN} = "varserver.service"

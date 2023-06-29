@@ -6,5 +6,4 @@ ExecStart=/usr/bin/varserver
 
 [Install]
 WantedBy=multi-user.target
-Alias=varserver.service
 

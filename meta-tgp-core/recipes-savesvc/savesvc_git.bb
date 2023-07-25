@@ -7,7 +7,7 @@
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=5dac46abad17db93b2a17020eeeabdca"
 
-SRC_URI = "git://github.com/tjmonk/loadconfig.git;protocol=https;branch=main"
+SRC_URI = "git://github.com/tjmonk/savesvc.git;protocol=https;branch=main"
 
 # Modify these as desired
 PV = "v0.1+git${SRCPV}"

@@ -11,7 +11,7 @@ SRC_URI = "git://github.com/tjmonk/savesvc.git;protocol=https;branch=main"
 
 # Modify these as desired
 PV = "v0.1+git${SRCPV}"
-SRCREV = "6f0bca5ce562273e8daf54a4e2b8466f29a163b3"
+SRCREV = "968566860090d8df81ccd056fd9f3148e1df356d"
 
 S = "${WORKDIR}/git"
 

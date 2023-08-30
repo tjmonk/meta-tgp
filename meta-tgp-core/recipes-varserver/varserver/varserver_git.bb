@@ -22,7 +22,7 @@ inherit systemd
 # Specify any options you want to pass to cmake using EXTRA_OECMAKE:
 EXTRA_OECMAKE = ""
 
-do_install:append() {
+do_install_append() {
     install -d ${D}${sysconfdir}/systemd/system
     install -m 0644 ${WORKDIR}/varserver.service ${D}${sysconfdir}/systemd/system/
 }

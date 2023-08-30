@@ -23,10 +23,10 @@ inherit systemd
 EXTRA_OECMAKE = ""
 
 do_install_append() {
-    install -d ${D}${sysconfdir}/systemd/system
-    install -m 0644 ${WORKDIR}/varserver.service ${D}${sysconfdir}/systemd/system/
+    install -d ${D}${systemd_system_unitdir}
+    install -m 0644 ${WORKDIR}/varserver.service ${D}${systemd_system_unitdir}
 }
 
-FILES:${PN} += "/etc/systemd/system/*"
+FILES_${PN} += "${systemd_system_unitdir}/varserver.service"
 
-SYSTEMD_SERVICE:${PN} = "varserver.service"
+SYSTEMD_SERVICE_${PN} = "varserver.service"

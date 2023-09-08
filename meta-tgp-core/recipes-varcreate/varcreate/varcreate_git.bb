@@ -11,7 +11,7 @@ SRC_URI = "git://github.com/tjmonk/varcreate.git;protocol=https;branch=main"
 
 # Modify these as desired
 PV = "v0.1+git${SRCPV}"
-SRCREV = "494f8ced92d1af4da417b66b6563be01b410a0cf"
+SRCREV = "0fa2b254fe66b99d05daa88be31dd2f79075b880"
 
 S = "${WORKDIR}/git"
 

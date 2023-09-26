@@ -12,7 +12,7 @@ SRC_URI += "file://varserver.service"
 
 # Modify these as desired
 PV = "1.0+git${SRCPV}"
-SRCREV = "e975027c4ac1ed278812bd825bac3afecbc8d17f"
+SRCREV = "fd99f4b5fdeda302833f6958f4f63554fa1cd4d7"
 
 S = "${WORKDIR}/git"
 

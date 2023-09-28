@@ -7,7 +7,7 @@ SRC_URI = "git://github.com/FastCGI-Archives/fcgi2;protocol=https;branch=master"
 
 # Modify these as desired
 PV = "2.4.2+git${SRCPV}"
-SRCREV = "63bfb226b8f2913efd8ec8cf52092df6f60f14dd"
+SRCREV = "04cd4b370b5fa58bf14c413503f1f1ba65e7152d"
 
 S = "${WORKDIR}/git"
 

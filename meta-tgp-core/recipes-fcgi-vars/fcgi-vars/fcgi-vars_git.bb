@@ -11,7 +11,7 @@ SRC_URI = "git://github.com/tjmonk/fcgi_vars;protocol=https;branch=main"
 
 # Modify these as desired
 PV = "v0.1+git${SRCPV}"
-SRCREV = "7a5d31bb1e5fb3c0a1f79beee4828c720aa31d27"
+SRCREV = "e4b9b45137ad3bcd0a3ca19f61c47091c9408fe2"
 
 S = "${WORKDIR}/git"
 

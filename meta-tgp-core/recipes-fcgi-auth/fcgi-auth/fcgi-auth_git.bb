@@ -9,7 +9,7 @@ SRCREV = "fbb0bf762e3c9a31f3ca97f0c677fecd7b9961e2"
 
 S = "${WORKDIR}/git"
 
-DEPENDS="varserver fcgi"
+DEPENDS="varserver sessionmgr fcgi"
 
 # NOTE: the following library dependencies are unknown, ignoring: REQUIRED fcgi
 #       (this is based on recipes that have previously been built and packaged)

@@ -9,7 +9,7 @@ SRCREV = "e110cc50ae0dd022f1407607faa46285c200bb4a"
 
 S = "${WORKDIR}/git"
 
-DEPENDS = "varserver crypt rt"
+DEPENDS = "varserver virtual/crypt rt"
 
 inherit cmake
 

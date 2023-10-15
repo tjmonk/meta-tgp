@@ -5,7 +5,7 @@ SRC_URI = "git://github.com/tjmonk/sessionmgr.git;protocol=https;branch=main"
 
 # Modify these as desired
 PV = "v0.1+git${SRCPV}"
-SRCREV = "e110cc50ae0dd022f1407607faa46285c200bb4a"
+SRCREV = "2c47c7fa61b35dbf8b55d7a09f1e992a095928e0"
 
 S = "${WORKDIR}/git"
 

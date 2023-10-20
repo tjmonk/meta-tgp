@@ -11,7 +11,7 @@ SRC_URI = "git://github.com/tjmonk/loadconfig.git;protocol=https;branch=main"
 
 # Modify these as desired
 PV = "v0.1+git${SRCPV}"
-SRCREV = "b4cab1d888660d9bf7eff0fcf6043ee2404511aa"
+SRCREV = "0574fa4c5fd2f72c01eef1aad0ab45ce8c491238"
 
 S = "${WORKDIR}/git"
 

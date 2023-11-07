@@ -5,7 +5,7 @@ SRC_URI = "git://github.com/tjmonk/libtjwt.git;protocol=https;branch=main"
 
 # Modify these as desired
 PV = "v0.1+git${SRCPV}"
-SRCREV = "8e16a82bce4822c8af4eefbd47cde12d7cc18f12"
+SRCREV = "bf1aae8ef40cbaccb2ef30203ec76c73b3e7de1d"
 
 S = "${WORKDIR}/git"
 

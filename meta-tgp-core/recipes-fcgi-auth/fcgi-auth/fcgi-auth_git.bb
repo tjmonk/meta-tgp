@@ -5,7 +5,7 @@ SRC_URI = "git://github.com/tjmonk/fcgi_auth;protocol=https;branch=main"
 
 # Modify these as desired
 PV = "v0.1+git${SRCPV}"
-SRCREV = "fbb0bf762e3c9a31f3ca97f0c677fecd7b9961e2"
+SRCREV = "481d414cf53e8c418d3c92b1c30bcd979e0d8d07"
 
 S = "${WORKDIR}/git"
 

@@ -10,8 +10,8 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=5dac46abad17db93b2a17020eeeabdca"
 SRC_URI = "git://github.com/tjmonk/libtjson.git;protocol=https;branch=main"
 
 # Modify these as desired
-PV = "v0.1+git${SRCPV}"
-SRCREV = "ef48f84bfdfad777fca0d7dec7e3a997b3f176d1"
+PV = "v0.3+git${SRCPV}"
+SRCREV = "f49a426eb341f58f6a9db579a3e2e20e0edcad8d"
 
 S = "${WORKDIR}/git"
 

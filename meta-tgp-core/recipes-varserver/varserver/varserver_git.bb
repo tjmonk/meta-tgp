@@ -11,8 +11,8 @@ SRC_URI = "git://github.com/tjmonk/varserver.git;protocol=https;branch=main"
 SRC_URI += "file://varserver.service"
 
 # Modify these as desired
-PV = "v0.32+git${SRCPV}"
-SRCREV = "981e6a6fc6a622e5215c85f5dc2cac7d30378bd9"
+PV = "v0.33+git${SRCPV}"
+SRCREV = "06fc70d52058faab2992f3e869f16e4fdd36b339"
 
 S = "${WORKDIR}/git"
 

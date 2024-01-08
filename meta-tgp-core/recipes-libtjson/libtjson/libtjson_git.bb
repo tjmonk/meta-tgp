@@ -11,7 +11,7 @@ SRC_URI = "git://github.com/tjmonk/libtjson.git;protocol=https;branch=main"
 
 # Modify these as desired
 PV = "v0.3+git${SRCPV}"
-SRCREV = "f49a426eb341f58f6a9db579a3e2e20e0edcad8d"
+SRCREV = "6e75e4c64fcb17f03b9aa3d4f9f51c32879f5f57"
 
 S = "${WORKDIR}/git"
 

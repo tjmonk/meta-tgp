@@ -9,7 +9,7 @@ SRCREV = "c3cb297e82d931d6054b5bee7bab1041e48dd112"
 
 S = "${WORKDIR}/git"
 
-DEPENDS = "varserver"
+DEPENDS = "varserver libtjson openssl"
 
 inherit cmake
 

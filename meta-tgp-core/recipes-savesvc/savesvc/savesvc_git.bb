@@ -10,8 +10,8 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=5dac46abad17db93b2a17020eeeabdca"
 SRC_URI = "git://github.com/tjmonk/savesvc.git;protocol=https;branch=main"
 
 # Modify these as desired
-PV = "v0.1+git${SRCPV}"
-SRCREV = "e5edba6a9f2f53a7253fb55b82b4bfa7ce16c6b4"
+PV = "v0.5+git${SRCPV}"
+SRCREV = "4bef42b133f76b236148be4f089f6499d95d28cd"
 
 S = "${WORKDIR}/git"
 

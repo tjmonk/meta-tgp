@@ -1,15 +1,15 @@
 LICENSE = "MIT"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=5dac46abad17db93b2a17020eeeabdca"
 
-SRC_URI = "git://github.com/tjmonk/sessionmgr.git;protocol=https;branch=main"
+SRC_URI = "git://github.com/tjmonk/manifest.git;protocol=https;branch=main"
 
 # Modify these as desired
-PV = "v0.6+git${SRCPV}"
-SRCREV = "64e0292f10eb4f17fad7e1cb69b1b5bcb39b60d7"
+PV = "v0.1+git${SRCPV}"
+SRCREV = "c3cb297e82d931d6054b5bee7bab1041e48dd112"
 
 S = "${WORKDIR}/git"
 
-DEPENDS = "varserver virtual/crypt libtjwt"
+DEPENDS = "varserver ssl"
 
 inherit cmake
 

@@ -1,9 +1,0 @@
-[Unit]
-Description=varserver service
-
-[Service]
-ExecStart=/usr/bin/varserver
-
-[Install]
-WantedBy=multi-user.target
-

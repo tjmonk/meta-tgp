@@ -10,8 +10,8 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=5dac46abad17db93b2a17020eeeabdca"
 SRC_URI = "git://github.com/tjmonk/varcreate.git;protocol=https;branch=main"
 
 # Modify these as desired
-PV = "v0.14+git${SRCPV}"
-SRCREV = "00911e906423484703978ddf9fe9663be586bcdc"
+PV = "v0.15+git${SRCPV}"
+SRCREV = "95cd65c921ebdca1cf11908fdc84fee25e609705"
 
 S = "${WORKDIR}/git"
 

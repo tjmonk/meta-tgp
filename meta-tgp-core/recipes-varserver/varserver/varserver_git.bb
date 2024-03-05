@@ -4,8 +4,8 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=5dac46abad17db93b2a17020eeeabdca"
 SRC_URI = "git://github.com/tjmonk/varserver.git;protocol=https;branch=main"
 
 # Modify these as desired
-PV = "v0.43+git${SRCPV}"
-SRCREV = "48301283ae87d6d7f50f795262add36839c7f0cd"
+PV = "v0.44+git${SRCPV}"
+SRCREV = "3111e51e421ba90786f816799ac2f45d506bb63b"
 
 S = "${WORKDIR}/git"
 

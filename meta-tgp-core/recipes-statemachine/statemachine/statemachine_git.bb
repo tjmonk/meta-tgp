@@ -10,8 +10,8 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=5dac46abad17db93b2a17020eeeabdca"
 SRC_URI = "git://github.com/tjmonk/statemachine.git;protocol=https;branch=main"
 
 # Modify these as desired
-PV = "v0.1+git${SRCPV}"
-SRCREV = "23820316b73bde6ee4fd0bab7c4335b4fb2f9c96"
+PV = "v0.2+git${SRCPV}"
+SRCREV = "c85dbd6d8634852b3c7768d6536e2918cb17fc65"
 
 S = "${WORKDIR}/git"
 

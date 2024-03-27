@@ -4,8 +4,8 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=5dac46abad17db93b2a17020eeeabdca"
 SRC_URI = "git://github.com/tjmonk/sessionmgr.git;protocol=https;branch=main"
 
 # Modify these as desired
-PV = "v0.6+git${SRCPV}"
-SRCREV = "64e0292f10eb4f17fad7e1cb69b1b5bcb39b60d7"
+PV = "v0.7+git${SRCPV}"
+SRCREV = "0401496898b0092c083155359a8fbdeb9dc81389"
 
 S = "${WORKDIR}/git"
 

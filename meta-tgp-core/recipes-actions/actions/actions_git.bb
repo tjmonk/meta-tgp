@@ -10,8 +10,8 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=5dac46abad17db93b2a17020eeeabdca"
 SRC_URI = "git://github.com/tjmonk/actions.git;protocol=https;branch=main"
 
 # Modify these as desired
-PV = "v0.2+git${SRCPV}"
-SRCREV = "5aced94ead2f5c4287de0371c48505eb321848b2"
+PV = "v0.3+git${SRCPV}"
+SRCREV = "0b85429857ed304e1482eb7db3368bd6ef90a36f"
 
 S = "${WORKDIR}/git"
 

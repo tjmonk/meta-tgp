@@ -10,8 +10,8 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=5dac46abad17db93b2a17020eeeabdca"
 SRC_URI = "git://github.com/tjmonk/udpt.git;protocol=https;branch=main"
 
 # Modify these as desired
-PV = "v0.1+git${SRCPV}"
-SRCREV = "55f74d88de27f8aab1b0515a58edf941b6e406bb"
+PV = "v0.2+git${SRCPV}"
+SRCREV = "38acf7115669c4d33606d18c59f973d374dd8f89"
 
 S = "${WORKDIR}/git"
 

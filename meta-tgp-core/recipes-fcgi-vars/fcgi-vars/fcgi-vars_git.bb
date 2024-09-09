@@ -10,8 +10,8 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=5dac46abad17db93b2a17020eeeabdca"
 SRC_URI = "git://github.com/tjmonk/fcgi_vars;protocol=https;branch=main"
 
 # Modify these as desired
-PV = "v0.16+git${SRCPV}"
-SRCREV = "6ea2af5a02248a5f4f7d80c49d5fdfea1d5d943b"
+PV = "v0.17+git${SRCPV}"
+SRCREV = "e875590886a5807a0392419548839eb91d7c2e8f"
 
 S = "${WORKDIR}/git"
 

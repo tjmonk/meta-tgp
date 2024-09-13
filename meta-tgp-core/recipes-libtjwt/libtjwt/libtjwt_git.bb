@@ -4,8 +4,8 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=5dac46abad17db93b2a17020eeeabdca"
 SRC_URI = "git://github.com/tjmonk/libtjwt.git;protocol=https;branch=main"
 
 # Modify these as desired
-PV = "v0.4+git${SRCPV}"
-SRCREV = "2d770f85fdedf0bab66b37c5bd2982569f5a2a1c"
+PV = "v0.5+git${SRCPV}"
+SRCREV = "e4e6c27fc1ca15ce82ec88fad8e83fcc34098f56"
 
 S = "${WORKDIR}/git"
 

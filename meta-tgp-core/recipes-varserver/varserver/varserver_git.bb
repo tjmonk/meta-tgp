@@ -11,6 +11,10 @@ S = "${WORKDIR}/git"
 
 inherit cmake
 
+# Suppress compile errors
+CFLAGS += " -Wno-error=stringop-overflow"
+CFLAGS += " -Wno-error=stringop-truncation"
+
 # Specify any options you want to pass to cmake using EXTRA_OECMAKE:
 EXTRA_OECMAKE = ""
 

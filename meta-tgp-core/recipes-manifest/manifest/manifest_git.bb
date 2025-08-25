@@ -1,5 +1,5 @@
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://LICENSE;md5=5dac46abad17db93b2a17020eeeabdca"
+LIC_FILES_CHKSUM = "file://LICENSE;md5=c02c14313846fbed7776c5e0ea3c51c7"
 
 SRC_URI = "git://github.com/tjmonk/manifest.git;protocol=https;branch=main"
 

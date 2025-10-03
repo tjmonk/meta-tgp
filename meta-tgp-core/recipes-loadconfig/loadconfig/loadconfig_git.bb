@@ -10,8 +10,8 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=5dac46abad17db93b2a17020eeeabdca"
 SRC_URI = "git://github.com/tjmonk/loadconfig.git;protocol=https;branch=main"
 
 # Modify these as desired
-PV = "v0.4+git${SRCPV}"
-SRCREV = "423e50bea729f44a4f7672b93eb229f510d2f467"
+PV = "v0.5+git${SRCPV}"
+SRCREV = "6a09a783e7d7f80ad938fe7ec0f4e25735b4377c"
 
 S = "${WORKDIR}/git"
 

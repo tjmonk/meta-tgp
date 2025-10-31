@@ -5,6 +5,7 @@ SRC_URI = "git://github.com/tjmonk/manifest.git;protocol=https;branch=main"
 
 # Modify these as desired
 PV = "v0.5+git${SRCPV}"
+# SRCREV = tags/v0.5
 SRCREV = "c1dd6e38fe3da76263be1df2180de553a95e5f30"
 
 S = "${WORKDIR}/git"
@@ -15,4 +16,3 @@ inherit cmake
 
 # Specify any options you want to pass to cmake using EXTRA_OECMAKE:
 EXTRA_OECMAKE = ""
-

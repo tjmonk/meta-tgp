@@ -11,6 +11,7 @@ SRC_URI = "git://github.com/tjmonk/libtjson.git;protocol=https;branch=main"
 
 # Modify these as desired
 PV = "v0.7+git${SRCPV}"
+# SRCREV = tags/v0.7
 SRCREV = "ac2c6d632960bc18576fd3437210dadf47b28005"
 
 S = "${WORKDIR}/git"
@@ -21,4 +22,3 @@ inherit cmake
 
 # Specify any options you want to pass to cmake using EXTRA_OECMAKE:
 EXTRA_OECMAKE = ""
-

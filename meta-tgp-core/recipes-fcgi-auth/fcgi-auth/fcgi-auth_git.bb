@@ -4,8 +4,9 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=5dac46abad17db93b2a17020eeeabdca"
 SRC_URI = "git://github.com/tjmonk/fcgi_auth;protocol=https;branch=main"
 
 # Modify these as desired
-PV = "v0.1+git${SRCPV}"
-SRCREV = "481d414cf53e8c418d3c92b1c30bcd979e0d8d07"
+PV = "v0.3+git${SRCPV}"
+# SRCREV = tags/v0.3 
+SRCREV = "6b9005516e383c212b7693e7d8c9852d9fcb11a0"
 
 S = "${WORKDIR}/git"
 
@@ -17,4 +18,3 @@ inherit cmake
 
 # Specify any options you want to pass to cmake using EXTRA_OECMAKE:
 EXTRA_OECMAKE = ""
-

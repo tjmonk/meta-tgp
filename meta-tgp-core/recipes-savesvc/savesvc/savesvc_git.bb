@@ -10,8 +10,9 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=5dac46abad17db93b2a17020eeeabdca"
 SRC_URI = "git://github.com/tjmonk/savesvc.git;protocol=https;branch=main"
 
 # Modify these as desired
-PV = "v0.6+git${SRCPV}"
-SRCREV = "7acde80f9bc6745c91f2004c428ece84c1991b53"
+PV = "v0.7+git${SRCPV}"
+# SRCREV = tags/v0.7
+SRCREV = "051f14dccdc31653e7c61e29c9a4e1ecd63a67f7"
 
 S = "${WORKDIR}/git"
 
@@ -21,4 +22,3 @@ inherit cmake
 
 # Specify any options you want to pass to cmake using EXTRA_OECMAKE:
 EXTRA_OECMAKE = ""
-

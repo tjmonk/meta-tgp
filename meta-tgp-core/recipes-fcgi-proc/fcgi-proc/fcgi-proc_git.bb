@@ -11,6 +11,7 @@ SRC_URI = "git://github.com/tjmonk/fcgi_proc;protocol=https;branch=main"
 
 # Modify these as desired
 PV = "v0.1+git${SRCPV}"
+# SRCREV = tags/v0.1
 SRCREV = "886dac9f0ad192abb1cb7aa8923aa94e5480d08b"
 
 S = "${WORKDIR}/git"
@@ -23,4 +24,3 @@ inherit cmake
 
 # Specify any options you want to pass to cmake using EXTRA_OECMAKE:
 EXTRA_OECMAKE = ""
-

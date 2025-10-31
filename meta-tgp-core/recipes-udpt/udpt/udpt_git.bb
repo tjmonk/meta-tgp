@@ -11,6 +11,7 @@ SRC_URI = "git://github.com/tjmonk/udpt.git;protocol=https;branch=main"
 
 # Modify these as desired
 PV = "v0.3+git${SRCPV}"
+# SRCREV = tags/v0.3
 SRCREV = "bcf8af9142a60f2123aa7797d0666da654b5b28b"
 
 S = "${WORKDIR}/git"
@@ -21,4 +22,3 @@ inherit cmake
 
 # Specify any options you want to pass to cmake using EXTRA_OECMAKE:
 EXTRA_OECMAKE = ""
-

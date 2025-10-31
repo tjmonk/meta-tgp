@@ -11,6 +11,7 @@ SRC_URI = "git://github.com/tjmonk/actions.git;protocol=https;branch=main"
 
 # Modify these as desired
 PV = "v0.3+git${SRCPV}"
+# SRCREV = tags/v0.3
 SRCREV = "0b85429857ed304e1482eb7db3368bd6ef90a36f"
 
 S = "${WORKDIR}/git"
@@ -21,4 +22,3 @@ inherit cmake
 
 # Specify any options you want to pass to cmake using EXTRA_OECMAKE:
 EXTRA_OECMAKE = ""
-

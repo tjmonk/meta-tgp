@@ -11,6 +11,7 @@ SRC_URI = "git://github.com/tjmonk/libvaraction.git;protocol=https;branch=main"
 
 # Modify these as desired
 PV = "v0.1+git${SRCPV}"
+# SRCREV = tags/v0.1
 SRCREV = "68284eda6817bd51fb6e4ad5226a5eae9ab912d8"
 
 DEPENDS = "varserver"
@@ -21,4 +22,3 @@ inherit cmake
 
 # Specify any options you want to pass to cmake using EXTRA_OECMAKE:
 EXTRA_OECMAKE = ""
-

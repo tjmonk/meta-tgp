@@ -11,6 +11,7 @@ SRC_URI = "git://github.com/tjmonk/statemachine.git;protocol=https;branch=main"
 
 # Modify these as desired
 PV = "v0.2+git${SRCPV}"
+# SRCREV = tags/v0.2
 SRCREV = "c85dbd6d8634852b3c7768d6536e2918cb17fc65"
 
 S = "${WORKDIR}/git"
@@ -21,4 +22,3 @@ inherit cmake
 
 # Specify any options you want to pass to cmake using EXTRA_OECMAKE:
 EXTRA_OECMAKE = ""
-

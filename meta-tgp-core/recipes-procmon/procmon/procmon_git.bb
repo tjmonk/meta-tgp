@@ -11,6 +11,7 @@ SRC_URI = "git://github.com/tjmonk/procmon.git;protocol=https;branch=main"
 
 # Modify these as desired
 PV = "v0.1+git${SRCPV}"
+# SRCREV = tags/v0.1
 SRCREV = "8f73a04d08fc27a765e604982bd245989ca35001"
 
 S = "${WORKDIR}/git"
@@ -23,4 +24,3 @@ inherit cmake
 
 # Specify any options you want to pass to cmake using EXTRA_OECMAKE:
 EXTRA_OECMAKE = ""
-

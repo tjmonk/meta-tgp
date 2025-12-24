@@ -10,8 +10,8 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=5dac46abad17db93b2a17020eeeabdca"
 SRC_URI = "git://github.com/tjmonk/mqttvars.git;protocol=https;branch=main"
 
 # Modify these as desired
-PV = "v0.1+git${SRCPV}"
-SRCREV = "e3303a17e0d892387dcedd57a171f1e4b6654323"
+PV = "v0.2+git${SRCPV}"
+SRCREV = "b9b20646c20e94a3b68dfbd08f671bbf5cee4cd2"
 
 S = "${WORKDIR}/git"
 

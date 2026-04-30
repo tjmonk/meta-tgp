@@ -22,9 +22,9 @@ S = "${WORKDIR}/git"
 
 # NOTE: the following library dependencies are unknown, ignoring: REQUIRED
 #       (this is based on recipes that have previously been built and packaged)
-DEPENDS = "libvarserver libgpiod (>=1.6.3) libjson"
+DEPENDS = "libvarserver libgpiod libjson"
 
-inherit cmake
+inherit cmake pkgconfig
 
 # Specify any options you want to pass to cmake using EXTRA_OECMAKE:
 EXTRA_OECMAKE = ""

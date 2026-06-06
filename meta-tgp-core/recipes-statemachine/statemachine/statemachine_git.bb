@@ -21,4 +21,4 @@ DEPENDS = "flex-native bison-native varserver libvaraction"
 inherit cmake
 
 # Specify any options you want to pass to cmake using EXTRA_OECMAKE:
-EXTRA_OECMAKE = ""
+EXTRA_OECMAKE += "-DFLEX_FLAGS='--noline' -DBISON_FLAGS='-l'"

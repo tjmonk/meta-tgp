@@ -9,7 +9,7 @@ SRC_URI = "git://github.com/tjmonk/gpioctrl;protocol=https;branch=scarthgap"
 
 # Modify these as desired
 PV = "v0.1+git${SRCPV}"
-SRCREV = "ff298a8bece42638cccba14287c878b9fabad285"
+SRCREV = "d2e53377aa05070e81f8ef34f257be6307287d6e"
 
 S = "${WORKDIR}/git"
 
